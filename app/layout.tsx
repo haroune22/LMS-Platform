@@ -25,7 +25,6 @@ export default function RootLayout({
             <ToasterProvider/>
             {children}
             </body>
-            {/* stripe listen --forward-to localhost:3000/api/14c35webhook */}
         </html>
       </ClerkProvider>
   )

@@ -2,7 +2,7 @@ import { getProgress } from "@/actions/get-progress";
 import { db } from "@/lib/db"
 import { auth } from "@clerk/nextjs"
 import { redirect } from "next/navigation"
-import { CourseSideBar } from "./_components/CourseSideBar";
+import { CourseSidebar } from "./_components/CourseSideBar";
 import { CourseNavbar } from "./_components/CourseNavbar";
 
 const CourseLayout = async({children,params}:{children:React.ReactNode,params:{courseId:string}}) => {
@@ -52,7 +52,7 @@ const CourseLayout = async({children,params}:{children:React.ReactNode,params:{c
                  />
             </div>
             <div className="hidden md:flex h-full w-80 flex-col fixed inset-y-0 z-50">
-                <CourseSideBar
+                <CourseSidebar
                     course={course}
                     progressCount={progressCount}
                 /> 

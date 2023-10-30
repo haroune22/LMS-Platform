@@ -7,7 +7,7 @@ import {
   SheetTrigger
 } from "@/components/ui/sheet";
 
-import { CourseSideBar } from "./CourseSideBar";
+import { CourseSidebar } from "./CourseSideBar";
 
 interface CourseMobileSidebarProps {
   course: Course & {
@@ -28,7 +28,7 @@ export const CourseMobileSidebar = ({
         <Menu />
       </SheetTrigger>
       <SheetContent side="left" className="p-0 bg-white w-72">
-        <CourseSideBar
+        <CourseSidebar
           course={course}
           progressCount={progressCount}
         />
